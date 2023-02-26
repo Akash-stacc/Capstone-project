@@ -20,7 +20,6 @@ const Navbar = () => {
             <li>Home</li>
             <li>Reach Us</li>
             <li>Doner</li>
-            <li>Contacts</li>
             <li>Profile</li>
             <li>Volenteur</li>
           </ul>
