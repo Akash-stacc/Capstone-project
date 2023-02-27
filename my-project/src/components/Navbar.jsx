@@ -19,7 +19,7 @@ const Navbar = () => {
           <ul className='flex gap-4'>
             <li>Home</li>
             <li>Reach Us</li>
-            <li>Donar</li>
+            <li>Donor</li>
             <li>Profile</li>
             <li>Volunteer</li>
           </ul>
