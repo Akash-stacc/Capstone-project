@@ -19,9 +19,9 @@ const Navbar = () => {
           <ul className='flex gap-4'>
             <li>Home</li>
             <li>Reach Us</li>
-            <li>Doner</li>
+            <li>Donor</li>
             <li>Profile</li>
-            <li>Volenteur</li>
+            <li>Volunteer</li>
           </ul>
         </div>
           <div className='hidden md:flex'>
