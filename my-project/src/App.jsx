@@ -1,33 +1,41 @@
 import React from 'react'
-import { Hero, Navbar,Companies, Meals } from './components'
-import './App.css'
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Companies from './components/Companies';
+import Meals from './components/Meals';
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
+import './App.css'
 
-function App() {
+
+function AppRoutes() {
   return (
-    <BrowserRouter>
+    <Router>
+      <Navbar />
       <Switch>
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/signup" component={SignupPage} />
-        {/* Add your other routes here */}
       </Switch>
-    </BrowserRouter>
+    </Router>
   );
 }
 
-
-
-const App = () => {
+function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Companies/>
-      <Meals />
-    </div>
-  )
+    <Router>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Hero} />
+          <Route exact path="/companies" component={Companies} />
+          <Route exact path="/meals" component={Meals} />
+          <Route exact path="/login" component={LoginPage} />
+          <Route exact path="/signup" component={SignupPage} />
+        </Switch>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export { AppRoutes, App };
