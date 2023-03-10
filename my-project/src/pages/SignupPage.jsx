@@ -5,7 +5,11 @@ import { TextField, Button } from "@material-ui/core";
 
 function SignupPage() {
   const [username, setUsername] = useState("");
+  const [Email, setemail] = useState("");            
+  const [Mobile,setmobile] = useState("");
   const [password, setPassword] = useState("");
+  const [Confirmpassword, setconfirmpassword] = useState("");
+  
   const dispatch = useDispatch();
 
   const handleSubmit = (event) => {
@@ -21,12 +25,27 @@ function SignupPage() {
         onChange={(e) => setUsername(e.target.value)}
       />
       <TextField
-        type="password"
+        label="Email"
+        value={email}
+        onChange={(e) => setemail(e.target.value)}
+      />
+       TextField
+        label="Mobile"
+        value={mobile}
+        onChange={(e) => setmobile(e.target.value)
+       
+      />
+       <TextField
         label="Password"
         value={password}
-        onChange={(e) => setPassword(e.target.value)}
+        onChange={(e) => setpassword(e.target.value)}
       />
-      <Button type="submit" variant="contained" color="primary">
+       <TextField
+        label="ConfirmPassword"
+        value={confirmpassword}
+        onChange={(e) => setconfirmpassword(e.target.value)}
+      />    
+<Button>type="submit" variant="contained" color="primary">
         Signup
       </Button>
     </form>
