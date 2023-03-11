@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import Slider from "react-slick";
+import { courses } from './data/Courses';
 
 
 const Meals = () => {
@@ -43,10 +44,8 @@ const Meals = () => {
     <div className='w-full bg-[#E9F8F3B2] py-24'>
         <div className='md:max-w-[1480px] m-auto max-w-[600px] '>
             <Slider {...settings}>
-            <Card   /> 
-            <Card /> 
-            <Card /> 
-            <Card />
+                {courses.map(course=><Card course={course}  />) }
+            
            
             </Slider>
             
