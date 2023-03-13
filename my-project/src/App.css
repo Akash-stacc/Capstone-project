@@ -24,6 +24,12 @@
 .slick-prev{
   z-index: 999999;
 }
+.catagoty-card:hover .arrow-icon{
+
+  fill:white;
+
+}
+
 
  #root {
   max-width: 1280px;
