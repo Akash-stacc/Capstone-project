@@ -5,5 +5,15 @@ import Meals from "./Meals";
 import Achievement from "./Achievement";
 import Catagories from "./Catagories";
 import Feedback from "./Feedback";
+import CTA from "./CTA";
 
-export { Navbar, Hero, Companies, Meals, Achievement, Catagories, Feedback };
+export {
+  Navbar,
+  Hero,
+  Companies,
+  Meals,
+  Achievement,
+  Catagories,
+  Feedback,
+  CTA,
+};

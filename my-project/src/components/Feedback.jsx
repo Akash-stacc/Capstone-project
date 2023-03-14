@@ -50,6 +50,7 @@ const Feedback = () => {
                 
                 <FeedbackCard />
                 <FeedbackCard />
+                <FeedbackCard />
            
             </Slider>
             
