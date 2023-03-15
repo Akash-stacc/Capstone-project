@@ -6,6 +6,7 @@ import Achievement from "./Achievement";
 import Catagories from "./Catagories";
 import Feedback from "./Feedback";
 import CTA from "./CTA";
+import Footer from "./Footer";
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   Catagories,
   Feedback,
   CTA,
+  Footer,
 };

@@ -7,7 +7,7 @@ import {TiHtml5} from 'react-icons/ti'
 const Catagories = () => {
   return (
     <div className='w-full bg-[#F0FBF7] py-24'>
-        <div className='md:max-w-[1680px] m-auto  md:max-w-[600px] '>
+        <div className='md:max-w-[2080px] m-auto  md:max-w-[600px] '>
         <h1 className='md:leading-[72px] text-3xl font-bold'>Most<span className='text-[#20B486]'>Popular Categories</span></h1>
               <p className='text-lg text-gray-600'>Various versions have evolved over the years, sometimes by accident,</p>
                 

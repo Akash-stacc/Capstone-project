@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hero, Navbar,Companies, Meals, Achievement, Feedback, CTA } from './components'
+import { Hero, Navbar,Companies, Meals, Achievement, Feedback, CTA, Footer } from './components'
 import './App.css'
 import Catagories from './components/Catagories'
 
@@ -16,6 +16,7 @@ const App = () => {
       <Catagories />
       <Feedback />
       <CTA />
+      <Footer />
 
     </div>
   )
